@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E0EC5C4298E5ABB004BA087 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EC5C3298E5ABB004BA087 /* main.c */; };
+		8E0EC5CC298E5AD0004BA087 /* worker.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EC5CB298E5AD0004BA087 /* worker.c */; };
+		8E0EC5CE298E5AE5004BA087 /* oss.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EC5CD298E5AE5004BA087 /* oss.c */; };
+		8E0EC5D0298E5B05004BA087 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EC5CF298E5B05004BA087 /* Makefile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +26,9 @@
 
 /* Begin PBXFileReference section */
 		8E0EC5C0298E5ABB004BA087 /* Proj1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Proj1; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E0EC5C3298E5ABB004BA087 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		8E0EC5CB298E5AD0004BA087 /* worker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = worker.c; sourceTree = "<group>"; };
+		8E0EC5CD298E5AE5004BA087 /* oss.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oss.c; sourceTree = "<group>"; };
+		8E0EC5CF298E5B05004BA087 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 		8E0EC5C2298E5ABB004BA087 /* Proj1 */ = {
 			isa = PBXGroup;
 			children = (
-				8E0EC5C3298E5ABB004BA087 /* main.c */,
+				8E0EC5CB298E5AD0004BA087 /* worker.c */,
+				8E0EC5CD298E5AE5004BA087 /* oss.c */,
+				8E0EC5CF298E5B05004BA087 /* Makefile */,
 			);
 			path = Proj1;
 			sourceTree = "<group>";
@@ -119,7 +125,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0EC5C4298E5ABB004BA087 /* main.c in Sources */,
+				8E0EC5D0298E5B05004BA087 /* Makefile in Sources */,
+				8E0EC5CE298E5AE5004BA087 /* oss.c in Sources */,
+				8E0EC5CC298E5AD0004BA087 /* worker.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
