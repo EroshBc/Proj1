@@ -12,10 +12,7 @@
 
 int main(int argc, char* argv[]){
    
-    printf("now in woker\n");
-    
-  
-
+    printf("Now at worker\n");
     int count = atoi(argv[1]);
     
     //print child process ID, parent Process ID, Iteration number before and after sleep
@@ -27,11 +24,10 @@ int main(int argc, char* argv[]){
 
         printf("Worker PID:%d , PPID:%d ITERATION:%d after sleep\n\n", getpid(),getppid(),i+1);
 
-        
-        
+    
     }
   
-   
-   
-    return 0;
+    printf("Now leaving worker\n");
+    
+    return EXIT_SUCCESS;
 }

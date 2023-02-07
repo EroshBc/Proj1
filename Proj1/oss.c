@@ -13,7 +13,7 @@
 
 int main(int argc, char* argv[]){
    
-    int n=0, s=0, t=0;
+    int n=3, s=2, t=2;
     
     int option=0;
     
@@ -43,14 +43,51 @@ int main(int argc, char* argv[]){
                 break;
                 //else exit
         }
-             
+    }
         
         //Implement oss to fork() and then exec() off one worker to do its task and wait() until it is done
-        
-        
-        
+
+//    pid_t child_p = fork();
+//
+//    if (child_p == 0){
+//        printf("I am a child but a copy of parent!\n");
+//        printf("My parent's PID is %d,and my PID is %d\n",getppid(), getpid());
+//
+//
+//    }else{
+//        printf("Im the paretn and PID:%d\n",getppid());
+//    }
+
+    
+        int children = 0;
+        pid_t pid;
+    
+        while (children < n) {
+            if (children >= s) {
+                
+            }
+            pid = fork();
+            if (pid == 0) {
+                printf("Im the child\n");
+                printf("My parent's PID is %d,and my PID is %d\n",getppid(), getpid());
+                char t_str[10];
+                sprintf(t_str, "%d", t);
+                execl("./worker", "worker", t_str, NULL);
+                printf("now at oss\n");
+                perror("exec failed");
+                exit(1);
+            }else{
+                wait(NULL);
+                printf("Im the parent and PID:%d\n",getppid());
+            }
+            children++;
+        }
+        while (children > 0) {
+            wait(NULL);
+            children--;
         }
     
-
-    return 0;
+    
+    
+    return EXIT_SUCCESS;
 }
