@@ -11,27 +11,27 @@
 #include <unistd.h>
 
 int main(int argc, char* argv[]){
-    printf("Welcome worker\n\n");
+   
+    printf("now in woker\n");
     
-    //if no arguments passed .. exit from the program
-    
-    if(argc !=2){
-        printf("Usage: %s \n\n", argv[0]);
-    }
-    
-    //convert the value pass in command line to integer
-    int n = atoi(argv[1]);
+  
+
+    int count = atoi(argv[1]);
     
     //print child process ID, parent Process ID, Iteration number before and after sleep
-    for(int i=0; i<n; i++){
-        printf("Worker PID:%d , PPID:%d ITERATION:%d before sleep\n", getpid(),getppid(),n );
-        
+    for(int i=0; i<count; i++){
+
+        printf("Worker PID:%d , PPID:%d ITERATION:%d before sleep\n", getpid(),getppid(),i+1);
+
         sleep(2);
-        
-        printf("Worker PID:%d , PPID:%d ITERATION:%d after sleep\n\n", getpid(),getppid(),n );
+
+        printf("Worker PID:%d , PPID:%d ITERATION:%d after sleep\n\n", getpid(),getppid(),i+1);
+
         
         
     }
-    
+  
+   
+   
     return 0;
 }
