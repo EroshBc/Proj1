@@ -25,9 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8E000BE52992B2A800C7CD13 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		8E0EC5C0298E5ABB004BA087 /* Proj1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Proj1; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0EC5CB298E5AD0004BA087 /* worker.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = worker.c; sourceTree = "<group>"; };
-		8E0EC5CD298E5AE5004BA087 /* oss.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oss.c; sourceTree = "<group>"; };
+		8E0EC5CD298E5AE5004BA087 /* oss.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = oss.c; sourceTree = "<group>"; wrapsLines = 0; };
 		8E0EC5CF298E5B05004BA087 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +65,7 @@
 				8E0EC5CB298E5AD0004BA087 /* worker.c */,
 				8E0EC5CD298E5AE5004BA087 /* oss.c */,
 				8E0EC5CF298E5B05004BA087 /* Makefile */,
+				8E000BE52992B2A800C7CD13 /* README */,
 			);
 			path = Proj1;
 			sourceTree = "<group>";
